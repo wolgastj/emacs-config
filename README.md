@@ -17,7 +17,7 @@ git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
 
 # Symlinks and Org mode
 rm -rf ~/.doom.d
-git clone https://github.com/cadrake/emacs-config.git
+git clone https://github.com/wolgastj/emacs-config.git
 ln -s ~/emacs-config ~/.doom.d
 doom sync
 mkdir -p ~/Documents/org/tasks

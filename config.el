@@ -51,10 +51,10 @@
 (set-face-attribute 'show-paren-match nil :weight 'extra-bold)
 
 ;; Allows moving buffers with Ctrl-c <Arrow>
-(global-set-key (kbd "C-c <left>")  'windmove-left)
-(global-set-key (kbd "C-c <right>") 'windmove-right)
-(global-set-key (kbd "C-c <up>")    'windmove-up)
-(global-set-key (kbd "C-c <down>")  'windmove-down)
+(global-set-key (kbd "C-w <left>")  'windmove-left)
+(global-set-key (kbd "C-w <right>") 'windmove-right)
+(global-set-key (kbd "C-w <up>")    'windmove-up)
+(global-set-key (kbd "C-w <down>")  'windmove-down)
 
 ;; Allows resizing windows with Shift-Ctrl-<Arrow>
 (global-set-key (kbd "S-C-<left>")  'shrink-window-horizontally)
@@ -146,8 +146,8 @@
 
 ;; Org Mode config
 (use-package! org
-  :init (setq org-directory "~/Dropbox/org"
-              org-agenda-files '("~/Dropbox/org/work/attentive")
+  :init (setq org-directory "~/workspace/projects/org"
+              org-agenda-files '("~/workspace/projects/org/tasks")
               org-hide-emphasis-markers t)
   :hook (org-mode . (lambda () (electric-indent-local-mode -1)))
   :hook (org-mode . (lambda () (visual-line-mode 0))))
